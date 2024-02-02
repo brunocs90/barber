@@ -1,7 +1,9 @@
+import Header from '../_components/header';
+
 export default function Home() {
   return (
     <main>
-      <div>My Barber</div>
+      <Header />
     </main>
   );
 }
