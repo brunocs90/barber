@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
+import Footer from './_components/footer';
 import './globals.css';
 
 const nunito = Nunito({
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${nunito.className} dark`}>{children}</body>
+      <body className={`${nunito.className} dark`}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
